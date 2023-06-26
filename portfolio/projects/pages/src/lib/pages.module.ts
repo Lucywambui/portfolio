@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
-
+import { MaterialModule } from '@projects/material';
 
 @NgModule({
   declarations: [
-
-  
     NavbarComponent,
-        HomepageComponent
+    HomepageComponent
   ],
   imports: [
+    RouterModule,
+    MaterialModule,
   ],
   exports: [
-
+    HomepageComponent
   ]
 })
+
 export class PagesModule { }

@@ -17,10 +17,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "material": [
-        "dist/material"
-      ],
-      "pages": [
+      "@projects/material":["projects/material/src/public-api.ts", "projects/material/src/lib/material.module.ts"],
+      "@projects/pages":["projects/pages/src/lib/pages.module.ts","projects/pages/src/public-api.ts"],
+     "pages": [
         "dist/pages"
       ]
     },
