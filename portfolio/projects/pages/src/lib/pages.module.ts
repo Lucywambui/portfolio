@@ -16,7 +16,9 @@ import { ProjectsComponent } from './projects/projects.component';
     MaterialModule,
   ],
   exports: [
-    HomepageComponent
+    HomepageComponent,
+    ProjectsComponent,
+    NavbarComponent
   ]
 })
 
