@@ -4,12 +4,14 @@ import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MaterialModule } from '@projects/material';
 import { ProjectsComponent } from './projects/projects.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     HomepageComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutMeComponent
   ],
   imports: [
     RouterModule,
@@ -18,6 +20,7 @@ import { ProjectsComponent } from './projects/projects.component';
   exports: [
     HomepageComponent,
     ProjectsComponent,
+    AboutMeComponent,
     NavbarComponent
   ]
 })
