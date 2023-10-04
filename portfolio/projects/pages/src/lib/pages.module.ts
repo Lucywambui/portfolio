@@ -6,6 +6,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { MaterialModule } from '@projects/material';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ElementsModule } from 'projects/elements/src/public-api';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
   imports: [
     RouterModule,
     MaterialModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    ElementsModule
   ],
   exports: [
     HomepageComponent,

@@ -1,0 +1,34 @@
+<div class="main-card-wrapper">
+    <div class="main-card" fxLayout="column" fxLayoutAlign="space-around-center">
+        <p class="project-type" fxLayout="row" fxLayoutAlign="center" fxFill>
+            SOFTWARE DEVELOPMENT
+        </p>
+        <div class="content" *ngFor="let project of projects" fxLayout="row" fxLayoutAlign="space-around-center">
+
+            <a class="card" *ngIf="project.projectType == 'SOFTWARE DEVELOPMENT'">
+                <img class="front" src={{project.projectUrl}} style="width: 100%; height: 60%;">
+                <div class="back">
+                    <div>
+                        <p>{{project.projectDesc}}</p>
+                        <a href={{project.projectLink}}><button class="button">Click to access information</button></a>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <p class="project-type" fxLayout="row" fxLayoutAlign="center" fxFill>
+            UX DESIGN
+        </p>
+        <div class="content" *ngFor="let project of projects" fxLayout="row" fxLayoutAlign="space-around-center">
+
+            <a class="card" *ngIf="project.projectType == 'UX DESIGN'">
+                <img class="front" src={{project.projectUrl}} style="width: 100%; height: 60%;">
+                <div class="back">
+                    <div>
+                        <p>{{project.projectDesc}}</p>
+                        <a href={{project.projectLink}}><button class="button">Click to access information</button></a>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
