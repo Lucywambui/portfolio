@@ -1,4 +1,4 @@
-  $primary: hsl(222, 80%, 50%);
+  $primary: #957d6a;
   $primary-light: hsl(222, 50%, 95%);
   $secondary: hsl(350, 80%, 50%);
   $red: hsl(10, 80%, 50%);
@@ -157,6 +157,7 @@
       backface-visibility: hidden;
       font-weight: bold;
       color: #fff;
+      margin: .5em;
       padding: .5em 1em;
       border-radius: 100px;
       font: inherit;

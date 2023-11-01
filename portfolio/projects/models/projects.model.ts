@@ -4,4 +4,5 @@ export interface project{
  projectName: string;
  projectDesc: string;
  projectLink: string;
+ projectLink2?: string;
 }

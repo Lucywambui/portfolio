@@ -10,22 +10,23 @@
                 <div class="back">
                     <div>
                         <p>{{project.projectDesc}}</p>
-                        <a href={{project.projectLink}}><button class="button">Click to access information</button></a>
+                        <a href={{project.projectLink}}><button class="button">GitHub Source Code</button></a>
+                        <a *ngIf="project.projectLink2 !== ''" href={{project.projectLink2}}><button class="button">Figma Prototype</button></a>
                     </div>
                 </div>
             </a>
         </div>
-        <p class="project-type" fxLayout="row" fxLayoutAlign="center" fxFill>
+        <p class="project-type " fxLayout="row " fxLayoutAlign="center " fxFill>
             UX DESIGN
         </p>
-        <div class="content" *ngFor="let project of projects" fxLayout="row" fxLayoutAlign="space-around-center">
+        <div class="content " *ngFor="let project of projects " fxLayout="row " fxLayoutAlign="space-around-center ">
 
-            <a class="card" *ngIf="project.projectType == 'UX DESIGN'">
-                <img class="front" src={{project.projectUrl}} style="width: 100%; height: 45%;">
-                <div class="back">
+            <a class="card " *ngIf="project.projectType=='UX DESIGN' ">
+                <img class="front " src={{project.projectUrl}} style="width: 100%; height: 45%; ">
+                <div class="back ">
                     <div>
                         <p>{{project.projectDesc}}</p>
-                        <a href={{project.projectLink}}><button class="button">Click to access information</button></a>
+                        <a href={{project.projectLink}}><button class="button ">Case study slide deck/Figma Prototype</button></a>
                     </div>
                 </div>
             </a>
