@@ -6,7 +6,7 @@
         <div class="content" *ngFor="let project of projects" fxLayout="row" fxLayoutAlign="space-around-center">
 
             <a class="card" *ngIf="project.projectType == 'SOFTWARE DEVELOPMENT'">
-                <img class="front" src={{project.projectUrl}} style="width: 100%; height: 53%" />
+                <img class="front" src={{project.projectUrl}} style="width: 100%; height: 55%" />
                 <div class="back">
                     <div>
                         <p>{{project.projectDesc}}</p>
@@ -16,17 +16,17 @@
                 </div>
             </a>
         </div>
-        <p class="project-type " fxLayout="row " fxLayoutAlign="center " fxFill>
+        <p class="project-type" fxLayout="row" fxLayoutAlign="center" fxFill>
             UX DESIGN
         </p>
-        <div class="content " *ngFor="let project of projects " fxLayout="row " fxLayoutAlign="space-around-center ">
+        <div class="content" *ngFor="let project of projects" fxLayout="row" fxLayoutAlign="space-around-center">
 
-            <a class="card " *ngIf="project.projectType=='UX DESIGN' ">
-                <img class="front " src={{project.projectUrl}} style="width: 100%; height: 45%; ">
-                <div class="back ">
+            <a class="card" *ngIf="project.projectType=='UX DESIGN'">
+                <img class="front" src={{project.projectUrl}} style="width: 100%; height: 58%;">
+                <div class="back">
                     <div>
                         <p>{{project.projectDesc}}</p>
-                        <a href={{project.projectLink}}><button class="button ">Case study slide deck/Figma Prototype</button></a>
+                        <a href={{project.projectLink}}><button class="button">Case study slide deck/Figma Prototype</button></a>
                     </div>
                 </div>
             </a>
