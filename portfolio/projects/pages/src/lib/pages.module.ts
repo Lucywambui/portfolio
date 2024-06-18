@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -17,6 +17,7 @@ import { ElementsModule } from 'projects/elements/src/public-api';
     AboutMeComponent
   ],
   imports: [
+    CommonModule,
     RouterModule,
     MaterialModule,
     NgOptimizedImage,
